@@ -1,0 +1,322 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L gradator:V1401 U301
+U 1 1 6036F84D
+P 5500 2950
+F 0 "U301" H 5500 3515 50  0000 C CNN
+F 1 "V1401" H 5500 3424 50  0000 C CNN
+F 2 "Package_SO:SOP-20_7.5x12.8mm_P1.27mm" H 5500 2950 50  0001 C CNN
+F 3 "" H 5500 2950 50  0001 C CNN
+	1    5500 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 3150 0    50   Input ~ 0
+WDCLK5V
+Wire Wire Line
+	4350 3150 5000 3150
+$Comp
+L power:+5V #PWR0168
+U 1 1 60371366
+P 5550 4850
+F 0 "#PWR0168" H 5550 4700 50  0001 C CNN
+F 1 "+5V" H 5565 5023 50  0000 C CNN
+F 2 "" H 5550 4850 50  0001 C CNN
+F 3 "" H 5550 4850 50  0001 C CNN
+	1    5550 4850
+	-1   0    0    1   
+$EndComp
+Text GLabel 4350 3600 0    50   Input ~ 0
+RST5V
+Wire Wire Line
+	4350 3600 5000 3600
+$Comp
+L power:GND #PWR0169
+U 1 1 603AA5B6
+P 4650 3250
+F 0 "#PWR0169" H 4650 3000 50  0001 C CNN
+F 1 "GND" V 4655 3122 50  0000 R CNN
+F 2 "" H 4650 3250 50  0001 C CNN
+F 3 "" H 4650 3250 50  0001 C CNN
+	1    4650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3250 5000 3250
+$Comp
+L power:GND #PWR0170
+U 1 1 603AA8DF
+P 6500 4050
+F 0 "#PWR0170" H 6500 3800 50  0001 C CNN
+F 1 "GND" H 6505 3877 50  0000 C CNN
+F 2 "" H 6500 4050 50  0001 C CNN
+F 3 "" H 6500 4050 50  0001 C CNN
+	1    6500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3400 6500 3400
+Wire Wire Line
+	6500 3400 6500 3500
+Wire Wire Line
+	6000 3500 6500 3500
+Connection ~ 6500 3500
+Wire Wire Line
+	6500 3500 6500 3600
+Wire Wire Line
+	6000 3600 6500 3600
+Connection ~ 6500 3600
+Wire Wire Line
+	6500 3600 6500 3700
+Wire Wire Line
+	6000 3700 6500 3700
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6500 3950
+Connection ~ 6500 3400
+Wire Wire Line
+	6000 3050 6500 3050
+Wire Wire Line
+	6000 2950 6500 2950
+Wire Wire Line
+	6500 2950 6500 3050
+Connection ~ 6500 3050
+$Comp
+L power:GND #PWR0171
+U 1 1 603ABD2B
+P 5250 4850
+F 0 "#PWR0171" H 5250 4600 50  0001 C CNN
+F 1 "GND" H 5255 4677 50  0000 C CNN
+F 2 "" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C301
+U 1 1 603AC04B
+P 5400 4450
+F 0 "C301" V 5148 4450 50  0000 C CNN
+F 1 "0.1µF" V 5239 4450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5438 4300 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 4850 5550 4450
+Wire Wire Line
+	5550 3900 5550 4450
+Connection ~ 5550 4450
+Wire Wire Line
+	5450 3900 5450 4000
+Wire Wire Line
+	5450 4000 5250 4000
+Wire Wire Line
+	5250 4000 5250 4450
+Wire Wire Line
+	5250 4850 5250 4450
+Connection ~ 5250 4450
+$Comp
+L gradator:TOTX1350(F) TX0
+U 1 1 603AED85
+P 9450 2600
+F 0 "TX0" H 9628 2521 50  0000 L CNN
+F 1 "TOTX1350(F)" H 9628 2430 50  0000 L CNN
+F 2 "gradator:TOTX1350F" H 9450 2600 50  0001 C CNN
+F 3 "" H 9450 2600 50  0001 C CNN
+	1    9450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0172
+U 1 1 603B1650
+P 7750 3400
+F 0 "#PWR0172" H 7750 3250 50  0001 C CNN
+F 1 "+5V" V 7765 3528 50  0000 L CNN
+F 2 "" H 7750 3400 50  0001 C CNN
+F 3 "" H 7750 3400 50  0001 C CNN
+	1    7750 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 3400 7950 3400
+Wire Wire Line
+	8750 2800 9200 2800
+Wire Wire Line
+	8750 2800 8750 3400
+$Comp
+L Device:R R301
+U 1 1 603B3337
+P 8300 2650
+F 0 "R301" V 8093 2650 50  0000 C CNN
+F 1 "2 kOhm" V 8184 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8230 2650 50  0001 C CNN
+F 3 "~" H 8300 2650 50  0001 C CNN
+	1    8300 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R302
+U 1 1 603B35DE
+P 8800 2650
+F 0 "R302" V 8593 2650 50  0000 C CNN
+F 1 "200 Ohm" V 8684 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8730 2650 50  0001 C CNN
+F 3 "~" H 8800 2650 50  0001 C CNN
+	1    8800 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C302
+U 1 1 603B3A28
+P 8300 2200
+F 0 "C302" V 8048 2200 50  0000 C CNN
+F 1 "27 pF" V 8139 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8338 2050 50  0001 C CNN
+F 3 "~" H 8300 2200 50  0001 C CNN
+	1    8300 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8150 2200 8150 2650
+Wire Wire Line
+	8450 2200 8450 2650
+Wire Wire Line
+	8450 2650 8650 2650
+Connection ~ 8450 2650
+Wire Wire Line
+	8950 2650 9200 2650
+Wire Wire Line
+	8150 2650 7900 2650
+Connection ~ 8150 2650
+Wire Wire Line
+	5000 2950 4400 2950
+Wire Wire Line
+	4400 2850 5000 2850
+Wire Wire Line
+	5000 2750 4400 2750
+Wire Wire Line
+	4400 2650 5000 2650
+Text HLabel 4400 2950 0    50   Input ~ 0
+in4
+Text HLabel 4400 2850 0    50   Input ~ 0
+in3
+Text HLabel 4400 2750 0    50   Input ~ 0
+in2
+Text HLabel 4400 2650 0    50   Input ~ 0
+in1
+$Comp
+L 74xGxx:74LVC1G04 U302
+U 1 1 605B6B6C
+P 7650 2650
+F 0 "U302" H 7625 2917 50  0000 C CNN
+F 1 "74LVC1G04" H 7625 2826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 7650 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2650 7350 2650
+$Comp
+L power:GND #PWR0173
+U 1 1 605C7A08
+P 7250 3150
+F 0 "#PWR0173" H 7250 2900 50  0001 C CNN
+F 1 "GND" H 7255 2977 50  0000 C CNN
+F 2 "" H 7250 3150 50  0001 C CNN
+F 3 "" H 7250 3150 50  0001 C CNN
+	1    7250 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 2850 7650 2750
+Wire Wire Line
+	7650 2550 7950 2550
+Wire Wire Line
+	7950 2550 7950 3150
+Connection ~ 7950 3400
+Wire Wire Line
+	7950 3400 8750 3400
+$Comp
+L 74xGxx:74LVC1G04 U303
+U 1 1 6031D59B
+P 7850 4600
+F 0 "U303" H 7825 4867 50  0000 C CNN
+F 1 "74LVC1G04" H 7825 4776 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 7850 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7850 4600 50  0001 C CNN
+	1    7850 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 4700 7850 5050
+Wire Wire Line
+	7850 5050 8750 5050
+Wire Wire Line
+	8750 5050 8750 3400
+Connection ~ 8750 3400
+Text GLabel 8300 4600 2    50   Input ~ 0
+16BIT5V
+Wire Wire Line
+	8300 4600 8150 4600
+Wire Wire Line
+	7850 4500 7850 3950
+Connection ~ 6500 3950
+Wire Wire Line
+	6500 3950 6500 4050
+Wire Wire Line
+	6500 3050 6500 3400
+Wire Wire Line
+	6000 3150 6200 3150
+Wire Wire Line
+	6200 3150 6200 3250
+Wire Wire Line
+	6200 3250 6000 3250
+Wire Wire Line
+	6200 3250 6200 4600
+Wire Wire Line
+	6200 4600 7600 4600
+Connection ~ 6200 3250
+$Comp
+L Device:C C303
+U 1 1 6056B2FE
+P 7750 3150
+F 0 "C303" V 7498 3150 50  0000 C CNN
+F 1 "0.1µF" V 7589 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7788 3000 50  0001 C CNN
+F 3 "~" H 7750 3150 50  0001 C CNN
+	1    7750 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3150 7950 3150
+Connection ~ 7950 3150
+Wire Wire Line
+	7950 3150 7950 3400
+Wire Wire Line
+	7600 3150 7500 3150
+Wire Wire Line
+	7650 2850 7500 2850
+Wire Wire Line
+	7500 2850 7500 3150
+Connection ~ 7500 3150
+Wire Wire Line
+	7500 3150 7250 3150
+Wire Wire Line
+	6500 3950 7850 3950
+$EndSCHEMATC
