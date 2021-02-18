@@ -444,7 +444,7 @@ U 1 1 602D104B
 P 2750 1900
 F 0 "SW1" H 2750 1575 50  0000 C CNN
 F 1 "SW_SPDT" H 2750 1666 50  0000 C CNN
-F 2 "digikey-footprints:Toggle_Switch_100SP1T2B4M6QE" H 2750 1900 50  0001 C CNN
+F 2 "gradator:Toggle_Switch_100SP1T2B4M6QE" H 2750 1900 50  0001 C CNN
 F 3 "~" H 2750 1900 50  0001 C CNN
 	1    2750 1900
 	-1   0    0    1   
@@ -473,12 +473,12 @@ Connection ~ 3200 1900
 Wire Wire Line
 	3200 1900 3400 1900
 $Comp
-L dk_Clock-Timing-Programmable-Timers-and-Oscillators:TLC555CP U102
+L gradator:TLC555CP U102
 U 1 1 604E6529
 P 6950 1550
 F 0 "U102" H 6950 1903 60  0000 C CNN
 F 1 "TLC555CP" H 6950 1797 60  0000 C CNN
-F 2 "digikey-footprints:SOIC-8_W3.9mm" H 7150 1750 60  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7150 1750 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 7150 1850 60  0001 L CNN
 F 4 "296-1857-5-ND" H 7150 1950 60  0001 L CNN "Digi-Key_PN"
 F 5 "TLC555CP" H 7150 2050 60  0001 L CNN "MPN"
@@ -498,7 +498,7 @@ U 1 1 6027BEEA
 P 4300 4650
 F 0 "U101" H 4300 5115 50  0000 C CNN
 F 1 "TPS767D301-EP" H 4300 5024 50  0000 C CNN
-F 2 "digikey-footprints:TSSOP-28-1EP_W4.40mm" H 4350 5000 50  0001 C CNN
+F 2 "gradator:TSSOP-28-1EP_W4.40mm" H 4350 5000 50  0001 C CNN
 F 3 "" H 4300 4650 50  0001 C CNN
 	1    4300 4650
 	1    0    0    -1  

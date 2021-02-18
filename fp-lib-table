@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name digikey-footprints)(type KiCad)(uri /home/griwes/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
   (lib (name gradator)(type KiCad)(uri ${KIPRJMOD}/libraries/gradator.pretty)(options "")(descr ""))
 )

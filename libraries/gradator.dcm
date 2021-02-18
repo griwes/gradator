@@ -72,6 +72,11 @@ K Single Gate NOT LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP TLC555CP
+D IC OSC SINGLE TIMER 2.1MHZ 8-DIP
+F http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555
+$ENDCMP
+#
 $CMP TXS0101DBV
 D 2-Bit Bidirectional Voltage-Level Translator in TSSOP Package With Auto Direction Sensing and ±15-kV ESD Protection
 K Level-Shifter CMOS-TTL-Translation
