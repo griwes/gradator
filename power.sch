@@ -260,12 +260,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0206
 U 1 1 604F810F
-P 6950 3100
-F 0 "#PWR0206" H 6950 2850 50  0001 C CNN
-F 1 "GND" H 6955 2927 50  0000 C CNN
-F 2 "" H 6950 3100 50  0001 C CNN
-F 3 "" H 6950 3100 50  0001 C CNN
-	1    6950 3100
+P 7800 3850
+F 0 "#PWR0206" H 7800 3600 50  0001 C CNN
+F 1 "GND" H 7805 3677 50  0000 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -315,8 +315,6 @@ Connection ~ 8000 1750
 Wire Wire Line
 	6450 2850 6950 2850
 Connection ~ 6950 2850
-Wire Wire Line
-	6950 2850 6950 3100
 Wire Wire Line
 	6400 1750 6050 1750
 Wire Wire Line
@@ -370,33 +368,14 @@ Wire Wire Line
 	6050 1400 6050 750 
 Wire Wire Line
 	6050 750  9300 750 
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 60231087
-P 1950 2000
-F 0 "J1" H 2007 2467 50  0000 C CNN
-F 1 "USB_B_Micro" H 2007 2376 50  0000 C CNN
-F 2 "gradator:USB_Micro_B_Female_0473460001" H 2100 1950 50  0001 C CNN
-F 3 "~" H 2100 1950 50  0001 C CNN
-	1    1950 2000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1850 2400
-NoConn ~ 2250 2200
-NoConn ~ 2250 2100
-NoConn ~ 2250 2000
 Wire Wire Line
 	3900 1900 3900 1400
-Wire Wire Line
-	3900 1400 6050 1400
 Wire Wire Line
 	1750 3150 3400 3150
 Wire Wire Line
 	3400 3150 3400 1900
 Wire Wire Line
 	3400 1900 3900 1900
-Wire Wire Line
-	1950 2600 1950 2500
 $Comp
 L power:GND #PWR0111
 U 1 1 6023EEFD
@@ -436,8 +415,6 @@ Connection ~ 3650 4800
 Wire Wire Line
 	2950 1900 3200 1900
 Connection ~ 3400 1900
-Wire Wire Line
-	2550 1800 2250 1800
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 602D104B
@@ -449,13 +426,6 @@ F 3 "~" H 2750 1900 50  0001 C CNN
 	1    2750 1900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1950 2500 2550 2500
-Wire Wire Line
-	2550 2500 2550 2000
-Connection ~ 1950 2500
-Wire Wire Line
-	1950 2500 1950 2400
 $Comp
 L power:PWR_FLAG #FLG0106
 U 1 1 6045225B
@@ -599,4 +569,81 @@ Wire Wire Line
 Connection ~ 9400 5100
 Wire Wire Line
 	9850 3700 9850 3550
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 6041A87E
+P 1400 1900
+F 0 "J1" H 1457 2217 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1457 2126 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1450 1860 50  0001 C CNN
+F 3 "~" H 1450 1860 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2000 1700 2000
+Wire Wire Line
+	1950 2000 2550 2000
+Connection ~ 1950 2000
+Wire Wire Line
+	1950 2000 1950 2600
+Wire Wire Line
+	1700 1800 2550 1800
+NoConn ~ 1700 1900
+$Comp
+L Diode:MM5Zxx D103
+U 1 1 608840FF
+P 6150 3400
+F 0 "D103" H 6150 3617 50  0000 C CNN
+F 1 "MM5Z4687T1G" H 6150 3526 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 6150 3225 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/mm5z2v4.pdf" H 6150 3400 50  0001 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3400 6000 3400
+Wire Wire Line
+	6950 2850 6950 3400
+Wire Wire Line
+	6950 3400 6300 3400
+Wire Wire Line
+	6950 3400 7800 3400
+Wire Wire Line
+	7800 3400 7800 3850
+Connection ~ 6950 3400
+Wire Wire Line
+	5450 1400 5750 1400
+Wire Wire Line
+	5450 1400 5450 3400
+$Comp
+L Device:R R109
+U 1 1 608C4BEA
+P 4600 1400
+F 0 "R109" V 4393 1400 50  0000 C CNN
+F 1 "4.7kOhm" V 4484 1400 50  0000 C CNN
+F 2 "" V 4530 1400 50  0001 C CNN
+F 3 "~" H 4600 1400 50  0001 C CNN
+	1    4600 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1400 5450 1400
+Connection ~ 5450 1400
+Wire Wire Line
+	3900 1400 4450 1400
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 608D3E1A
+P 5750 1400
+F 0 "#FLG0107" H 5750 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 1573 50  0000 C CNN
+F 2 "" H 5750 1400 50  0001 C CNN
+F 3 "~" H 5750 1400 50  0001 C CNN
+	1    5750 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 1400
+Wire Wire Line
+	5750 1400 6050 1400
 $EndSCHEMATC
